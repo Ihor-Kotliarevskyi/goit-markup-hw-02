@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ihor-Kotliarevskyi Homework #1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,400&family=Roboto:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <nav>
             <a href="./index.html">WebStudio</a>
             <ul>
-                <li><a href="">Studio</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contacts</a></li>
+                <li><a href="#team">Studio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#top">Contacts</a></li>
             </ul>
         </nav>
         <address>
@@ -28,8 +33,8 @@
             <h1>Effective Solutions for Your Business</h1>
             <button type="button">Order Service</button>
         </section>
-        <section>
-            <h2>Title</h2>
+        <section class="all-descr">
+            <h2 class="all-descr-title" hidden>Title</h2>
             <ul>
                 <li><h3>Strategy</h3>
                 <p>Our goal is to identify the business
@@ -45,24 +50,75 @@
                 <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p></li>
             </ul>
         </section>
-        <section>
-            <h2>Our Team</h2>
-            <ul>
-                <li><img src="./images/img-3.jpg" alt="Mark Guerrero" width="264">
-                <h3>Mark Guerrero</h3>
-                <p>Product Designer</p></li>
+        <section id="team" class="team">
+            <h2 class="team-title">Our Team</h2>
+            <ul class="team-list">
+                <li><img src="./images/mark-guerrero.jpg" alt="Mark Guerrero" width="264">
+                    <h3>Mark Guerrero</h3>
+                    <p>Product Designer</p>
+                </li>
             
-                <li><img src="./images/img-2.jpg" alt="Tom Ford" width="264">
-                <h3>Tom Ford</h3>
-                <p>Frontend Developer</p></li>
+                <li><img src="./images/tom-ford.jpg" alt="Tom Ford" width="264">
+                    <h3>Tom Ford</h3>
+                    <p>Frontend Developer</p>
+                </li>
             
-                <li><img src="./images/img-1.jpg" alt="Camila Garcia" width="264">
-                <h3>Camila Garcia</h3>
-                <p>Marketing</p></li>
-            
-                <li><img src="./images/img.jpg" alt="Daniel Wilson" width="264">
-                <h3>Daniel Wilson</h3>
-                <p>UI Designer</p></li>
+                <li><img src="./images/camila-garcia.jpg" alt="Camila Garcia" width="264">
+                    <h3>Camila Garcia</h3>
+                    <p>Marketing</p>
+                </li>
+                
+                <li><img src="./images/daniel-wilson.jpg" alt="Daniel Wilson" width="264">
+                    <h3>Daniel Wilson</h3>
+                    <p>UI Designer</p>
+                </li>
+            </ul>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2 class="portfolio-title">Our Portfolio</h2>
+            <ul class="portfolio-list">
+                <li>
+                    <a class="link" href="#">
+                        <img src="./images/portfolio/portfolio-1.jpg" alt="Banking App" width="360" height="300">
+                        <h3>Banking App</h3>
+                        <p>App</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#">
+                        <img src="./images/portfolio/portfolio-2.jpg" alt="Phone payment" width="360" height="300">
+                        <h3>Cashless Payment</h3>
+                        <p>Marketing</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#">
+                        <img src="./images/portfolio/portfolio-3.jpg" alt="Laptop and Phone" width="360" height="300">
+                        <h3>Meditation App</h3>
+                        <p>App</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#">
+                        <img src="./images/portfolio/portfolio-4.jpg" alt="Car's helm" width="360" height="300">
+                        <h3>Taxi Service</h3>
+                        <p>Marketing</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#">
+                        <img src="./images/portfolio/portfolio-5.jpg" alt="Phone with wallpappers" width="360" height="300">
+                        <h3>Screen Illustrations</h3>
+                        <p>Design</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#">
+                        <img src="./images/portfolio/portfolio-6.jpg" alt="Girl with phone" width="360" height="300">
+                        <h3>Online Courses</h3>
+                        <p>Marketing</p>
+                    </a>
+                </li>
             </ul>
         </section>
     </main>
